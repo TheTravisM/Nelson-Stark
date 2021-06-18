@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"><title>Architecture – Nelson Stark</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="contact-form-7-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all"><link rel="stylesheet" id="swiper-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/assets/plugins/swiper/swiper.min.css" type="text/css" media="all"><link rel="stylesheet" id="qi-addons-for-elementor-grid-style-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/assets/css/grid.min.css" type="text/css" media="all"><link rel="stylesheet" id="qi-addons-for-elementor-helper-parts-style-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/assets/css/helper-parts.min.css" type="text/css" media="all"><link rel="stylesheet" id="qi-addons-for-elementor-style-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/assets/css/main.min.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-default-style-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/style.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-modules-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/css/modules.min.css" type="text/css" media="all"><style id="wilmer-mikado-modules-inline-css" type="text/css">
+.page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner, .page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner { padding: 0;}@media only screen and (max-width: 1024px) {.page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner, .page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner { padding: 0;}}.page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner, .page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner { padding: 0;}@media only screen and (max-width: 1024px) {.page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner, .page-id-532 .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner { padding: 0;}}
+</style><link rel="stylesheet" id="mkdf-dripicons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/dripicons/dripicons.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-font_elegant-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/elegant-icons/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-font_awesome-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/font-awesome/css/fontawesome-all.min.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-ion_icons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/ion-icons/css/ionicons.min.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-linea_icons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/linea-icons/style.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-linear_icons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/linear-icons/style.css" type="text/css" media="all"><link rel="stylesheet" id="mkdf-simple_line_icons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/framework/lib/icons-pack/simple-line-icons/simple-line-icons.css" type="text/css" media="all"><link rel="stylesheet" id="mediaelement-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-mediaelement-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-style-dynamic-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/css/style_dynamic.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-modules-responsive-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/css/modules-responsive.min.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-style-dynamic-responsive-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/css/style_dynamic_responsive.css" type="text/css" media="all"><link rel="stylesheet" id="wilmer-mikado-google-fonts-css" href="http://fonts.googleapis.com/css?family=Yantramanav%3A900%2C800%2C700%2C600%2C500%2C400%2C300%7CPoppins%3A900%2C800%2C700%2C600%2C500%2C400%2C300&subset=latin-ext&ver=1.0.0" type="text/css" media="all"><link rel="stylesheet" id="wilmer-core-dashboard-style-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/core-dashboard/assets/css/core-dashboard.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-icons-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-animations-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-frontend-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all"><style id="elementor-frontend-inline-css" type="text/css">
+@font-face{font-family:eicons;src:url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style><link rel="stylesheet" id="elementor-post-8-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/elementor/css/post-8.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-post-532-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/elementor/css/post-532.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.7.2" type="text/css" media="all"><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script><script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script></head><body class="page-template page-template-full-width page-template-full-width-php page page-id-532 wilmer-core-2.2 qodef-qi--no-touch qi-addons-for-elementor-1.2.2 wilmer-ver-2.5 mkdf-grid-1300 mkdf-content-is-behind-header mkdf-empty-google-api mkdf-wide-dropdown-menu-content-in-grid mkdf-logo-text-source mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-vertical mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-border-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-logo-area-in-grid-border-disable mkdf-header-vertical-shadow-disable mkdf-header-vertical-border-disable mkdf-side-menu-slide-from-right mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-header-top-enabled mkdf-search-covers-header elementor-default elementor-kit-8 elementor-page elementor-page-532" itemscope itemtype="http://schema.org/WebPage">
+	<section class="mkdf-side-menu"><a class="mkdf-close-side-menu mkdf-close-side-menu-predefined" href="#">
+		<svg class="mkdf-close-icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve"><style type="text/css">
+						   .st0{fill:#FFFFFF;}
+					   </style><path class="st0" d="M15.5,2c0.4-0.4,0.4-1.1,0-1.5c-0.2-0.2-0.5-0.3-0.8-0.3c0,0,0,0,0,0c-0.3,0-0.6,0.1-0.8,0.3L2.5,12
+						   c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8C2.9,14,3.6,14,4,13.5L15.5,2z"></path><path class="st0" d="M15.5,2c0.4-0.4,0.4-1.1,0-1.5c-0.2-0.2-0.5-0.3-0.8-0.3c0,0,0,0,0,0c-0.3,0-0.6,0.1-0.8,0.3L2.5,12
+						   c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8C2.9,14,3.6,14,4,13.5L15.5,2z"></path><path class="st0" d="M2.5,2C2,1.6,2,0.9,2.5,0.5c0.2-0.2,0.5-0.3,0.8-0.3c0,0,0,0,0,0c0.3,0,0.6,0.1,0.8,0.3L15.5,12
+						   c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8c-0.4,0.4-1.1,0.4-1.5,0L2.5,2z"></path><path class="st0" d="M2.5,2C2,1.6,2,0.9,2.5,0.5c0.2-0.2,0.5-0.3,0.8-0.3c0,0,0,0,0,0c0.3,0,0.6,0.1,0.8,0.3L15.5,12
+						   c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8c-0.4,0.4-1.1,0.4-1.5,0L2.5,2z"></path></svg></a>
+	<div id="text-13" class="widget mkdf-sidearea widget_text"><div class="mkdf-widget-title-holder"><h4 class="mkdf-widget-title">Quick contact info</h4></div>			<div class="textwidget"><p>Introducing a truly professional WordPress theme built to last! We developed Wilmër for all construction & architecture sites.</p>
+</div>
+		</div>			
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="https://wilmer.qodeinteractive.com/elementor/contact-us/" target="_self" style="color: #9ca5af">
+				<span class="mkdf-icon-element mkdf-custom-image"><img src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/footer-icon-img-04.png" alt="icon_widget_image"></span>				<span class="mkdf-icon-text ">Monday-Friday: 9am to 5pm; Satuday: 10ap to 2pm</span>			</a>
+						
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="https://www.google.com/maps/place/7200-7298+Colonial+Rd,+Brooklyn,+NY+11209,+USA/@40.6344539,-74.0331523,18z/data=!3m1!4b1!4m5!3m4!1s0x89c24ff836cd2eb3:0xdd6e3e3f4289d8a2!8m2!3d40.6344527!4d-74.0324825" target="_blank" style="margin: 0 5px 24px 0px;color: #9ca5af">
+				<span class="mkdf-icon-element mkdf-custom-image"><img src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/footer-icon-img-01.png" alt="icon_widget_image"></span>				<span class="mkdf-icon-text ">7300-7398 Colonial Rd, Brooklyn, NY 11209, USA</span>			</a>
+						
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="tel:+12312345678900" target="_self" style="margin: 0 0 0 0;color: #9ca5af">
+				<span class="mkdf-icon-element mkdf-custom-image"><img src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/footer-icon-img-03.png" alt="icon_widget_image"></span>				<span class="mkdf-icon-text ">+ (123) 1234-567-8900</span>			</a>
+						
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="tel:+12312345678901" target="_self" style="margin: 0 0 22px 29px;color: #9ca5af">
+								<span class="mkdf-icon-text mkdf-no-icon">+ (123) 1234-567-8901</span>			</a>
+						
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="mailto:wilmer@qodeinteractive.com" target="_self" style="margin: 0 0 0 0;color: #9ca5af">
+				<span class="mkdf-icon-element mkdf-custom-image"><img src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/footer-icon-img-02.png" alt="icon_widget_image"></span>				<span class="mkdf-icon-text ">wilmer@qodeinteractive.com</span>			</a>
+						
+			<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff5e14" href="mailto:wilmer2@qodeinteractive.com" target="_self" style="margin: 0 0 42px 28px;color: #9ca5af">
+								<span class="mkdf-icon-text mkdf-no-icon">wilmer2@qodeinteractive.com</span>			</a>
+			<div class="widget mkdf-social-icons-group-widget mkdf-square-icons text-align-center"><div class="mkdf-social-icons-group-widget-inner">									<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ffffff" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_facebook"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ffffff" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_pinterest"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ffffff" href="https://twitter.com/qodeinteractive" target="_blank">
+						<span class="mkdf-social-icon-widget social_twitter"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ffffff" href="https://dribbble.com/qodeinteractive" target="_blank">
+						<span class="mkdf-social-icon-widget social_dribbble"></span>					</a>
+												</div></div></section><div class="mkdf-wrapper">
+        <div class="mkdf-wrapper-inner">
+            	
+	
+    
+	<div class="mkdf-top-bar mkdf-top-bar-dark-skin">
+				
+						
+			<div class="mkdf-vertical-align-containers">
+				<div class="mkdf-position-left"><div class="mkdf-position-left-inner">
+                            <div id="custom_html-2" class="widget_text widget widget_custom_html mkdf-top-bar-widget"><div class="textwidget custom-html-widget"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><path class="st0" d="M12.5,6.9c-0.3,0-0.6-0.2-0.6-0.5c-0.2-1.2-1.1-2-2.3-2.3C9.3,4,9.1,3.7,9.1,3.3C9.2,3,9.5,2.8,9.9,2.8
+	C10.7,3,11.4,3.4,12,4c0.6,0.6,1,1.3,1.1,2.1c0.1,0.4-0.2,0.7-0.5,0.8C12.6,6.9,12.6,6.9,12.5,6.9z"></path><path class="st0" d="M15.4,6.9c-0.3,0-0.6-0.2-0.6-0.6c-0.3-2.7-2.4-4.7-5-5c-0.4,0-0.6-0.4-0.6-0.7C9.2,0.2,9.5,0,9.8,0
+	c1.6,0.2,3,0.9,4.2,2c1.1,1.1,1.8,2.6,2,4.2C16,6.5,15.8,6.8,15.4,6.9C15.4,6.9,15.4,6.9,15.4,6.9z"></path><path class="st0" d="M13.2,16c-0.1,0-0.1,0-0.2,0c0,0,0,0,0,0c-2.3-0.2-4.5-1-6.4-2.3c-1.8-1.1-3.3-2.6-4.4-4.4C1,7.4,0.2,5.2,0,2.9
+	c0,0,0,0,0,0c-0.1-1.1,0.7-2.1,1.9-2.2c0.1,0,0.1,0,0.2,0h2.1c1,0,1.9,0.7,2.1,1.8c0,0,0,0,0,0c0.1,0.6,0.2,1.2,0.5,1.8
+	C7,5.1,6.8,5.9,6.2,6.5c0,0,0,0,0,0L5.7,7c0.8,1.3,2,2.5,3.3,3.3l0.5-0.5c0,0,0,0,0,0c0.6-0.6,1.4-0.7,2.2-0.5
+	c0.6,0.2,1.2,0.4,1.8,0.5c0,0,0,0,0,0c1,0.1,1.8,1,1.8,2.1v2.1C15.3,15.1,14.4,16,13.2,16C13.2,16,13.2,16,13.2,16z M13.2,14.7
+	C13.2,14.7,13.2,14.7,13.2,14.7c0.5,0,0.8-0.3,0.8-0.8v-2.1c0,0,0,0,0,0c0-0.4-0.3-0.7-0.7-0.8c-0.7-0.1-1.4-0.3-2.1-0.5
+	c-0.3-0.1-0.6,0-0.8,0.2l-0.9,0.9c-0.2,0.2-0.5,0.2-0.8,0.1c-1.9-1.1-3.4-2.6-4.5-4.5C4.1,7,4.2,6.7,4.4,6.5l0.9-0.9
+	C5.5,5.3,5.6,5,5.5,4.8C5.2,4.1,5,3.4,4.9,2.6C4.9,2.3,4.6,2,4.2,2c0,0,0,0,0,0H2.1C2,2,2,2,2,2C1.6,2,1.3,2.4,1.3,2.8
+	c0.2,2.1,0.9,4.1,2.1,5.8c0,0,0,0,0,0c1,1.6,2.4,3,4,4c0,0,0,0,0,0C9.1,13.8,11.1,14.5,13.2,14.7z"></path></svg><a href="tel:123" style="margin-left:4px;margin-right:10px;">+(123) 1234-567-8901</a>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" style="margin-left: 15px" xml:space="preserve"><path class="st0" d="M13.7,2.3C12.1,0.8,10.1,0,8,0c0,0,0,0,0,0C5.9,0,3.9,0.8,2.3,2.3C0.8,3.9,0,5.9,0,8c0,2.1,0.8,4.1,2.3,5.7
+	C3.9,15.2,5.9,16,8,16c0,0,0,0,0,0c1.7,0,3.5-0.6,4.9-1.6c0.3-0.2,0.3-0.6,0.1-0.9c-0.2-0.3-0.6-0.3-0.9-0.1
+	c-1.2,0.9-2.6,1.4-4.1,1.4h0c-1.8,0-3.5-0.7-4.7-2c-1.3-1.3-2-3-2-4.7c0-3.7,3-6.7,6.7-6.7h0c3.7,0,6.7,3,6.7,6.7v0.7
+	c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6V8l0,0c0-2-1.6-3.6-3.6-3.6C6,4.4,4.4,6,4.4,8S6,11.6,8,11.6c1.1,0,2.1-0.5,2.8-1.3
+	c0.5,0.8,1.4,1.3,2.4,1.3c1.6,0,2.9-1.3,2.9-2.9V8C16,5.9,15.2,3.9,13.7,2.3z M8,10.3c-1.3,0-2.3-1-2.3-2.3s1-2.3,2.3-2.3
+	c1.3,0,2.3,1,2.3,2.3S9.3,10.3,8,10.3z"></path></svg><a href="mailto:wilmer@qodeinteractive.com" style="margin-left:6px;margin-right:25px;">wilmer@qodeinteractive.com</a>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" xml:space="preserve"><style type="text/css">
+	.st0{fill:#12192D;}
+</style><g><path class="st0" d="M15.4,4.9c-0.8-2-2.3-3.4-4.3-4.3c-2-0.9-4.3-0.9-6.3,0c-2,0.9-3.4,2.3-4.3,4.3C0.2,5.8,0,6.9,0,8
+		c0,1.1,0.2,2.2,0.6,3.1c0.9,2,2.3,3.4,4.3,4.3c1,0.4,2,0.6,3.1,0.6c1.1,0,2.1-0.2,3.1-0.6c2-0.8,3.4-2.3,4.3-4.3
+		c0.4-1,0.6-2.1,0.6-3.1C16,6.9,15.8,5.9,15.4,4.9z M14.7,8c0,1.2-0.3,2.3-0.9,3.4c-0.6,1-1.4,1.8-2.5,2.4c-1,0.6-2.2,0.9-3.4,0.9
+		c-0.9,0-1.8-0.2-2.6-0.5c-0.8-0.4-1.6-0.8-2.1-1.4c-0.6-0.6-1.1-1.3-1.4-2.1C1.5,9.8,1.3,8.9,1.3,8c0-1.2,0.3-2.3,0.9-3.4
+		c0.6-1,1.4-1.8,2.4-2.4c1-0.6,2.1-0.9,3.4-0.9s2.3,0.3,3.4,0.9c1,0.6,1.9,1.4,2.5,2.4C14.4,5.7,14.7,6.8,14.7,8z"></path><path class="st0" d="M8.7,7.8V3.5c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7V8l0,0.1c0,0.2,0,0.4,0.2,0.5l2.6,2.6
+		c0.1,0.1,0.3,0.2,0.5,0.2c0.2,0,0.3-0.1,0.5-0.2c0.3-0.3,0.3-0.7,0-0.9L8.7,7.8z"></path></g></svg><a href="https://wilmer.qodeinteractive.com/elementor/contact-us/" style="margin-left: 6px;margin-right:0;">Mon - Sat 8:00 - 17:30, Sunday - CLOSED</a>
+
+
+</div></div>					</div>
+				</div>
+				<div class="mkdf-position-right"><div class="mkdf-position-right-inner">
+                        <div class="widget mkdf-social-icons-group-widget text-align-left"><div class="mkdf-social-icons-group-widget-inner">									<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="margin: 0 24px 0 0px;" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_facebook"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="margin: 0 24px 0 0px;" href="https://www.vimeo.com/" target="_blank">
+						<span class="mkdf-social-icon-widget social_vimeo"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="margin: 0 24px 0 0px;" href="https://twitter.com/QodeInteractive" target="_blank">
+						<span class="mkdf-social-icon-widget social_twitter"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="margin: 0 24px 0 0px;" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_pinterest"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="margin: 0 24px 0 0px;" href="https://www.linkedin.com/company/qode-themes/" target="_blank">
+						<span class="mkdf-social-icon-widget social_linkedin"></span>					</a>
+								</div></div>					</div>
+				</div>
+			</div>
+				
+				
+			</div>
+	
+	
+<aside class="mkdf-vertical-menu-area mkdf-vertical-alignment-center"><div class="mkdf-vertical-menu-area-inner">
+		<div class="mkdf-vertical-area-background"></div>
+		
+
+    <div class="mkdf-logo-wrapper mkdf-text-logo-type">
+        <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/" style="font-size: 26px">
+                            <span class="mkdf-text-logo">
+                    Nelson Stark                </span>
+                    </a>
+    </div>
+		<div class="mkdf-vertical-menu-outer">
+	<nav class="mkdf-vertical-menu mkdf-vertical-dropdown-below"><ul id="menu-left-menu" class=""><li id="nav-menu-item-9142" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow"><a href="#" class=" current "><span class="item_outer"><span class="item_text">Home</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<div class="second"><div class="inner"><ul><li id="nav-menu-item-9167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home "><a href="https://TheTravisM.github.io/Nelson-Stark/" class=""><span class="item_outer"><span class="item_text">Main Home</span></span></a></li>
+	<li id="nav-menu-item-9166" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/construction/" class=""><span class="item_outer"><span class="item_text">Construction</span></span></a></li>
+	<li id="nav-menu-item-9161" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-532 current_page_item "><a href="https://TheTravisM.github.io/Nelson-Stark/architecture/" class=""><span class="item_outer"><span class="item_text">Architecture</span></span></a></li>
+	<li id="nav-menu-item-9226" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/investors/" class=""><span class="item_outer"><span class="item_text">Investors</span></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-9143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=""><span class="item_outer"><span class="item_text">Pages</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<div class="second"><div class="inner"><ul><li id="nav-menu-item-9221" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/about-us/" class=""><span class="item_outer"><span class="item_text">About us</span></span></a></li>
+	<li id="nav-menu-item-9222" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/contact-us/" class=""><span class="item_outer"><span class="item_text">Contact Us</span></span></a></li>
+	<li id="nav-menu-item-9223" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/faq/" class=""><span class="item_outer"><span class="item_text">FAQ Page</span></span></a></li>
+	<li id="nav-menu-item-9227" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/our-team/" class=""><span class="item_outer"><span class="item_text">Our Team</span></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-9145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=""><span class="item_outer"><span class="item_text">Portfolio</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<div class="second"><div class="inner"><ul><li id="nav-menu-item-9247" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/portfolio-full-height-slider/" class=""><span class="item_outer"><span class="item_text">Full Height Slider</span></span></a></li>
+	<li id="nav-menu-item-9248" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/gallery-full-width/" class=""><span class="item_outer"><span class="item_text">Gallery</span></span></a></li>
+	<li id="nav-menu-item-9249" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/masonry/" class=""><span class="item_outer"><span class="item_text">Masonry</span></span></a></li>
+	<li id="nav-menu-item-9225" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/standard/" class=""><span class="item_outer"><span class="item_text">Standard</span></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-9144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=""><span class="item_outer"><span class="item_text">Blog</span><i class="mkdf-menu-arrow fa fa-angle-down"></i></span></a>
+<div class="second"><div class="inner"><ul><li id="nav-menu-item-9250" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/blog-masonry/" class=""><span class="item_outer"><span class="item_text">Masonry</span></span></a></li>
+	<li id="nav-menu-item-9224" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/right-sidebar/" class=""><span class="item_outer"><span class="item_text">Standard</span></span></a></li>
+	<li id="nav-menu-item-9252" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/no-sidebar/" class=""><span class="item_outer"><span class="item_text">No Sidebar</span></span></a></li>
+	<li id="nav-menu-item-9251" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2018/12/14/eco-friendly/" class=""><span class="item_outer"><span class="item_text">Single post</span></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-9220" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://TheTravisM.github.io/Nelson-Stark/landing/" class=""><span class="item_outer"><span class="item_text">Landing</span></span></a></li>
+</ul></nav></div>
+		<div class="mkdf-vertical-area-widget-holder">
+			<div class="widget mkdf-social-icons-group-widget text-align-left"><div class="mkdf-social-icons-group-widget-inner">									<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="font-size: 14px;margin: 10px -26px 10px 54px;" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_facebook"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="font-size: 14px;margin: 10px -26px 10px 54px;" href="http://www.vimeo.com" target="_blank">
+						<span class="mkdf-social-icon-widget social_vimeo"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="font-size: 14px;margin: 10px -26px 10px 54px;" href="https://twitter.com/qodeinteractive" target="_blank">
+						<span class="mkdf-social-icon-widget social_twitter"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="font-size: 14px;margin: 10px -26px 10px 54px;" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+						<span class="mkdf-social-icon-widget social_pinterest"></span>					</a>
+													<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" style="font-size: 14px;margin: 10px -26px 10px 54px;" href="https://www.linkedin.com/company/qode-themes" target="_blank">
+						<span class="mkdf-social-icon-widget social_linkedin"></span>					</a>
+								</div></div>		</div>
+	</div>
+</aside><header class="mkdf-mobile-header"><div class="mkdf-mobile-header-inner">
+		<div class="mkdf-mobile-header-holder">
+            <div class="mkdf-vertical-align-containers">
+                <div class="mkdf-vertical-align-containers">
+                    <div class="mkdf-position-left"><div class="mkdf-position-left-inner">
+                            
+
+    <div class="mkdf-logo-wrapper mkdf-text-logo-type">
+        <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/" style="font-size: 26px">
+                            <span class="mkdf-text-logo">
+                    Nelson Stark                </span>
+                    </a>
+    </div>
+                        </div>
+                    </div>
+                    <div class="mkdf-position-right"><div class="mkdf-position-right-inner">
+                                                                                        <div class="mkdf-mobile-menu-opener mkdf-mobile-menu-opener-predefined">
+                                    <a href="javascript:void(0)">
+                                                                                <span class="mkdf-mobile-menu-icon">
+                                            <span class="mkdf-hm-lines"><span class="mkdf-hm-line mkdf-line-1"></span><span class="mkdf-hm-line mkdf-line-2"></span><span class="mkdf-hm-line mkdf-line-3"></span></span>                                        </span>
+                                    </a>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		
+	<nav class="mkdf-mobile-nav" role="navigation" aria-label="Mobile Menu"><div class="mkdf-grid">
+			<ul id="menu-main-menu-navigation" class=""><li id="mobile-menu-item-9137" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub"><h6><span>Home</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu"><li id="mobile-menu-item-9162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home "><a href="https://TheTravisM.github.io/Nelson-Stark/" class=""><span>Main Home</span></a></li>
+	<li id="mobile-menu-item-9174" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/swipe-slider/" class=""><span>Swipe Slider</span></a></li>
+	<li id="mobile-menu-item-9163" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/construction/" class=""><span>Construction</span></a></li>
+	<li id="mobile-menu-item-9168" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-532 current_page_item "><a href="https://TheTravisM.github.io/Nelson-Stark/architecture/" class=""><span>Architecture</span></a></li>
+	<li id="mobile-menu-item-9177" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/investors/" class=""><span>Investors</span></a></li>
+	<li id="mobile-menu-item-9173" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/projects-home/" class=""><span>Projects Home</span></a></li>
+	<li id="mobile-menu-item-9164" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/real-estate/" class=""><span>Real Estate</span></a></li>
+	<li id="mobile-menu-item-9175" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/metro-showcase/" class=""><span>Metro Showcase</span></a></li>
+	<li id="mobile-menu-item-9176" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/coming-soon/" class=""><span>Coming Soon</span></a></li>
+	<li id="mobile-menu-item-9210" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/landing/" class=""><span>Landing</span></a></li>
+</ul></li>
+<li id="mobile-menu-item-9138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Pages</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu"><li id="mobile-menu-item-9180" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/about-me/" class=""><span>About me</span></a></li>
+	<li id="mobile-menu-item-9179" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/about-us/" class=""><span>About us</span></a></li>
+	<li id="mobile-menu-item-9202" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/our-clients/" class=""><span>Our Clients</span></a></li>
+	<li id="mobile-menu-item-9205" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/get-in-touch/" class=""><span>Get In Touch</span></a></li>
+	<li id="mobile-menu-item-9206" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/contact-us/" class=""><span>Contact Us</span></a></li>
+	<li id="mobile-menu-item-9204" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/faq/" class=""><span>FAQ Page</span></a></li>
+	<li id="mobile-menu-item-9201" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/our-team/" class=""><span>Our Team</span></a></li>
+	<li id="mobile-menu-item-9200" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/our-services/" class=""><span>Our Services</span></a></li>
+	<li id="mobile-menu-item-9199" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/our-process/" class=""><span>Our Process</span></a></li>
+	<li id="mobile-menu-item-9203" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/pricing-plans/" class=""><span>Pricing Plans</span></a></li>
+	<li id="mobile-menu-item-9156" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://wilmer.qodeinteractive.com/elementor/404-error-page" class=""><span>404 Error Page</span></a></li>
+</ul></li>
+<li id="mobile-menu-item-9139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Portfolio</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu"><li id="mobile-menu-item-9147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Types</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9182" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/standard/" class=""><span>Standard</span></a></li>
+		<li id="mobile-menu-item-9183" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/gallery-in-grid/" class=""><span>Gallery In Grid</span></a></li>
+		<li id="mobile-menu-item-9181" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/gallery-full-width/" class=""><span>Gallery Full Width</span></a></li>
+		<li id="mobile-menu-item-9232" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/slider/" class=""><span>Slider</span></a></li>
+		<li id="mobile-menu-item-9234" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/masonry/" class=""><span>Masonry</span></a></li>
+		<li id="mobile-menu-item-9233" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/portfolio-full-height-slider/" class=""><span>Full Height Slider</span></a></li>
+	</ul></li>
+	<li id="mobile-menu-item-9148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Layouts</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9184" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/two-columns/" class=""><span>Two Columns</span></a></li>
+		<li id="mobile-menu-item-9186" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/three-columns/" class=""><span>Three Columns</span></a></li>
+		<li id="mobile-menu-item-9188" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/three-columns-wide/" class=""><span>Three Columns Wide</span></a></li>
+		<li id="mobile-menu-item-9185" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/four-columns/" class=""><span>Four Columns</span></a></li>
+		<li id="mobile-menu-item-9187" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/four-columns-wide/" class=""><span>Four Columns Wide</span></a></li>
+		<li id="mobile-menu-item-9190" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/five-columns/" class=""><span>Five Columns</span></a></li>
+		<li id="mobile-menu-item-9189" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/five-columns-wide/" class=""><span>Five Columns Wide</span></a></li>
+	</ul></li>
+	<li id="mobile-menu-item-9157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Hover Types</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9235" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/standard-shader/" class=""><span>Shader</span></a></li>
+		<li id="mobile-menu-item-9236" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/gallery-overlay/" class=""><span>Overlay</span></a></li>
+		<li id="mobile-menu-item-9237" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio/gallery-bordered-overlay/" class=""><span>Bordered Overlay</span></a></li>
+	</ul></li>
+	<li id="mobile-menu-item-9149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Singles</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9198" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/institutional-design/" class=""><span>Big Images</span></a></li>
+		<li id="mobile-menu-item-9196" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/montfoort-building/" class=""><span>Big Gallery</span></a></li>
+		<li id="mobile-menu-item-9197" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/beauty-of-corten/" class=""><span>Small Images</span></a></li>
+		<li id="mobile-menu-item-9195" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/small-pavilions/" class=""><span>Small Gallery</span></a></li>
+		<li id="mobile-menu-item-9192" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/mono-office/" class=""><span>Big Masonry</span></a></li>
+		<li id="mobile-menu-item-9194" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/akoya-building/" class=""><span>Big Slider</span></a></li>
+		<li id="mobile-menu-item-9191" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/shapes-of-jeju/" class=""><span>Small Masonry</span></a></li>
+		<li id="mobile-menu-item-9193" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item "><a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/minimal-design/" class=""><span>Small Slider</span></a></li>
+	</ul></li>
+</ul></li>
+<li id="mobile-menu-item-9170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><h6><span>Blog</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu"><li id="mobile-menu-item-9178" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/blog-masonry/" class=""><span>Masonry List</span></a></li>
+	<li id="mobile-menu-item-9146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Standard Lists</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9169" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/right-sidebar/" class=""><span>Right Sidebar</span></a></li>
+		<li id="mobile-menu-item-9172" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/left-sidebar/" class=""><span>Left Sidebar</span></a></li>
+		<li id="mobile-menu-item-9171" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/blog/no-sidebar/" class=""><span>No Sidebar</span></a></li>
+	</ul></li>
+	<li id="mobile-menu-item-9150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Post Types</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9240" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2018/12/14/eco-friendly/" class=""><span>Standard</span></a></li>
+		<li id="mobile-menu-item-9238" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2018/12/20/new-trends/" class=""><span>Gallerry</span></a></li>
+		<li id="mobile-menu-item-9217" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2019/01/01/responsive-building-envelope-concepts-in-zero-emission-neighborhoods-and-smart-cities/" class=""><span>Link</span></a></li>
+		<li id="mobile-menu-item-9216" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2019/01/01/cooling-methods/" class=""><span>Quote</span></a></li>
+		<li id="mobile-menu-item-9219" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2019/01/01/green-buildings/" class=""><span>Video</span></a></li>
+		<li id="mobile-menu-item-9218" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2019/01/01/zero-energy-homes/" class=""><span>Audio</span></a></li>
+		<li id="mobile-menu-item-9239" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="https://TheTravisM.github.io/Nelson-Stark/2018/12/20/superstructures/" class=""><span>No Sidebar</span></a></li>
+	</ul></li>
+</ul></li>
+<li id="mobile-menu-item-9140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Shop</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu"><li id="mobile-menu-item-9165" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/shop/" class=""><span>Product List</span></a></li>
+	<li id="mobile-menu-item-9155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Layouts</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9231" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/shop/three-columns/" class=""><span>Three Columns</span></a></li>
+		<li id="mobile-menu-item-9230" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/shop/four-columns/" class=""><span>Four Columns</span></a></li>
+		<li id="mobile-menu-item-9229" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/shop/five-columns-wide/" class=""><span>Five Columns Wide</span></a></li>
+		<li id="mobile-menu-item-9228" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/shop/six-columns-wide/" class=""><span>Six Columns Wide</span></a></li>
+	</ul></li>
+	<li id="mobile-menu-item-9141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h6><span>Shop Pages</span></h6><span class="mobile_arrow"><i class="mkdf-sub-arrow icon_plus"></i><i class="fa fa-angle-down"></i></span>
+	<ul class="sub_menu"><li id="mobile-menu-item-9207" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/my-account/" class=""><span>My Account</span></a></li>
+		<li id="mobile-menu-item-9209" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/cart/" class=""><span>Cart</span></a></li>
+		<li id="mobile-menu-item-9208" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://TheTravisM.github.io/Nelson-Stark/checkout/" class=""><span>Checkout</span></a></li>
+	</ul></li>
+</ul></li>
+</ul></div>
+	</nav></div>
+	
+	<form action="https://TheTravisM.github.io/Nelson-Stark/" class="mkdf-search-cover" method="get">
+		<div class="mkdf-container">
+        <div class="mkdf-search-cover-icon">
+            <div class="mkdf-search-cover-icon-holder">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve"><path class="st0" d="M17.9,16.7l-4.2-4.2c1.1-1.4,1.7-3,1.7-4.8c0-2-0.8-4-2.2-5.4c-1.4-1.4-3.4-2.2-5.4-2.2s-4,0.8-5.4,2.2
+                    S0.1,5.7,0.1,7.7s0.8,4,2.2,5.4c1.4,1.4,3.4,2.2,5.4,2.2c1.8,0,3.4-0.6,4.8-1.7l4.2,4.2c0.2,0.2,0.4,0.2,0.6,0.2
+                    c0.2,0,0.4-0.1,0.6-0.2c0.2-0.2,0.2-0.4,0.2-0.6C18.1,17.1,18,16.9,17.9,16.7z M13.7,7.7c0,1.6-0.6,3.1-1.8,4.2l0,0
+                    c-1.1,1.1-2.6,1.7-4.2,1.7c-3.3,0-6-2.7-6-6c0-3.3,2.7-6,6-6C11,1.7,13.7,4.4,13.7,7.7z"></path></svg></div>
+        </div>
+		<div class="mkdf-full-width mkdf-serarch-cover-holder clearfix">
+				<div class="mkdf-form-holder-outer">
+				<div class="mkdf-form-holder">
+					<div class="mkdf-form-holder-inner">
+						<input type="text" placeholder="Type your search" name="s" class="mkdf_search_field" autocomplete="off" required></div>
+				</div>
+			</div>
+	            <a class="mkdf-search-close mkdf-search-close-svg-path" href="#">
+                <svg class="mkdf-close-icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve"><style type="text/css">
+            .st0{fill:#FFFFFF;}
+        </style><path class="st0" d="M15.5,2c0.4-0.4,0.4-1.1,0-1.5c-0.2-0.2-0.5-0.3-0.8-0.3c0,0,0,0,0,0c-0.3,0-0.6,0.1-0.8,0.3L2.5,12
+            c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8C2.9,14,3.6,14,4,13.5L15.5,2z"></path><path class="st0" d="M15.5,2c0.4-0.4,0.4-1.1,0-1.5c-0.2-0.2-0.5-0.3-0.8-0.3c0,0,0,0,0,0c-0.3,0-0.6,0.1-0.8,0.3L2.5,12
+            c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8C2.9,14,3.6,14,4,13.5L15.5,2z"></path><path class="st0" d="M2.5,2C2,1.6,2,0.9,2.5,0.5c0.2-0.2,0.5-0.3,0.8-0.3c0,0,0,0,0,0c0.3,0,0.6,0.1,0.8,0.3L15.5,12
+            c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8c-0.4,0.4-1.1,0.4-1.5,0L2.5,2z"></path><path class="st0" d="M2.5,2C2,1.6,2,0.9,2.5,0.5c0.2-0.2,0.5-0.3,0.8-0.3c0,0,0,0,0,0c0.3,0,0.6,0.1,0.8,0.3L15.5,12
+            c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8c-0.4,0.4-1.1,0.4-1.5,0L2.5,2z"></path></svg></a>
+		</div>
+	</div>
+	</form></header><a id="mkdf-back-to-top" href="#">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="16px" viewbox="0 0 10 16" xml:space="preserve"><g><rect x="4.5" y="0.9" class="st0" width="1" height="15.1"></rect></g><g><polygon class="st0" points="9.3,5.5 10,4.8 5.2,0 4.8,0 0,4.8 0.7,5.5 5,1.2 	"></polygon></g></svg></a>
+			        
+            <div class="mkdf-content">
+                <div class="mkdf-content-inner">
+<div class="mkdf-full-width">
+    	<div class="mkdf-full-width-inner">
+        					<div class="mkdf-grid-row">
+				<div class="mkdf-page-content-holder mkdf-grid-col-12">
+							<div data-elementor-type="wp-page" data-elementor-id="532" class="elementor elementor-532" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-919a129 elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-elementor-row-grid-no mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="919a129" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b85d08d" data-id="b85d08d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ef3b658 elementor-widget elementor-widget-wp-widget-rev-slider-widget" data-id="ef3b658" data-element_type="widget" data-widget_type="wp-widget-rev-slider-widget.default">
+				<div class="elementor-widget-container">
+			
+			<p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_6_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;background-image:url(https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/pattern-rev-img-01.jpg);background-repeat:no-repeat;background-size:cover;background-position:center center;max-width:;"><rs-module id="rev_slider_6_1" style="" data-version="6.5.0"><rs-slides><rs-slide data-key="rs-14" data-title="Slide" data-thumb="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-01-100x50.jpg" data-anim="ms:600;" data-in="o:0;" data-out="a:false;" data-color="light"><img loading="lazy" src="http://PLACEHOLDER.wpsho/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="s" title="home-7-rev-slider-img-01" width="1920" height="1100" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-01.jpg" data-no-retina><rs-layer id="slider-6-slide-14-layer-3" data-type="text" data-xy="xo:82px,87px,77px,-10px;yo:409px,139px,170px,171px;" data-text="w:normal;s:14;l:28;ls:1px;fw:500;a:inherit;" data-dim="w:376px;h:23px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:1100;sp:800;sR:1100;" data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:5;font-family:Yantramanav;">EXPLORE THE FEATURES 
+							</rs-layer><rs-layer id="slider-6-slide-14-layer-1" data-type="text" data-xy="xo:77px,84px,76px,-14px;yo:435px,165px,200px,202px;" data-text="w:normal;s:80,80,63,45;l:80,80,60,45;fw:900;a:inherit;" data-dim="w:638px,878px,498px,287px;h:161px,auto,auto,auto;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:1100;sp:800;sR:1100;" data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:6;font-family:Yantramanav;">STAYING AHEAD OF SCHEDULE 
+							</rs-layer><rs-layer id="slider-6-slide-14-layer-2" data-type="text" data-xy="xo:80px,85px,75px,381px;yo:608px,344px,344px,300px;" data-text="w:normal;l:30,30,30,22;fw:400,400,400,300;a:inherit;" data-dim="w:597px,663px,610px,308px;h:67px,68px,69px,auto;" data-vbility="t,t,t,f" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:1300;sp:800;sR:1300;" data-frame_999="o:0;tp:600;st:w;sR:6900;" style="z-index:7;font-family:Yantramanav;">Etiam scelerisque tortor at lectus dapibus, nec fermentum diam feugiat.
+Morbi rutrum magna et dui feugiat, non tristique mi convallis liquam. 
+							</rs-layer><rs-layer id="slider-6-slide-14-layer-12" data-type="text" data-xy="xo:81px,89px,80px,-10px;y:t,t,t,m;yo:684px,417px,421px,80px;" data-text="w:nowrap,nowrap,nowrap,normal;s:16;l:32;a:inherit;" data-dim="w:auto,auto,auto,305px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:1500;sp:800;sR:1500;" data-frame_999="o:0;tp:600;st:w;sR:6700;" style="z-index:8;font-family:Yantramanav;"><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/portfolio-item/institutional-architecture/" target="_self" style="margin: 16px 16px 16px 0" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Read More</span>
+    </a><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/contact-us/" target="_self" style="background-color: #00235a;font-weight: 400" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Contact Us</span>
+    </a> 
+							</rs-layer></rs-slide><rs-slide data-key="rs-15" data-title="Slide" data-thumb="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-02-100x50.jpg" data-anim="ms:600;" data-in="o:0;" data-out="a:false;" data-color="light"><img loading="lazy" src="http://PLACEHOLDER.wpsho/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="a" title="home-7-rev-slider-img-02" width="1920" height="1100" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-02.jpg" data-no-retina><rs-layer id="slider-6-slide-15-layer-3" data-type="text" data-xy="xo:82px,86px,77px,-12px;yo:409px,140px,167px,185px;" data-text="w:normal;s:14;l:28;ls:1px;fw:500;a:inherit;" data-dim="w:376px;h:23px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:0;sp:800;" data-frame_999="o:0;tp:600;st:w;sR:8200;" style="z-index:5;font-family:Yantramanav;">EXPLORE THE FEATURES 
+							</rs-layer><rs-layer id="slider-6-slide-15-layer-1" data-type="text" data-xy="xo:77px,84px,76px,-14px;yo:435px,165px,200px,217px;" data-text="w:normal;s:80,80,63,45;l:80,80,60,45;fw:900;a:inherit;" data-dim="w:638px,878px,498px,287px;h:161px,auto,auto,auto;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:0;sp:800;" data-frame_999="o:0;tp:600;st:w;sR:8200;" style="z-index:6;font-family:Yantramanav;">CONTEMPORARY
+CONSTRUCTION
+
+ 
+							</rs-layer><rs-layer id="slider-6-slide-15-layer-2" data-type="text" data-xy="xo:81px,85px,78px,381px;yo:608px,340px,342px,315px;" data-text="w:normal;l:30,30,30,22;fw:400,400,400,300;a:inherit;" data-dim="w:597px,663px,610px,308px;h:67px,68px,69px,auto;" data-vbility="t,t,t,f" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:200;sp:800;sR:200;" data-frame_999="o:0;tp:600;st:w;sR:8000;" style="z-index:7;font-family:Yantramanav;">Etiam scelerisque tortor at lectus dapibus, nec fermentum diam feugiat.
+Morbi rutrum magna et dui feugiat, non tristique mi convallis liquam. 
+							</rs-layer><rs-layer id="slider-6-slide-15-layer-12" data-type="text" data-xy="xo:81px,88px,79px,-12px;y:t,t,t,m;yo:684px,418px,420px,55px;" data-text="w:nowrap,nowrap,nowrap,normal;s:16;l:32;a:inherit;" data-dim="w:auto,auto,auto,305px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:400;sp:800;sR:400;" data-frame_999="o:0;tp:600;st:w;sR:7800;" style="z-index:8;font-family:Yantramanav;"><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/portfolio-item/institutional-architecture/" target="_self" style="margin: 16px 16px 16px 0" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Read More</span>
+    </a><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/contact-us/" target="_self" style="background-color: #00235a;font-weight: 400" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Contact Us</span>
+    </a> 
+							</rs-layer></rs-slide><rs-slide data-key="rs-16" data-title="Slide" data-thumb="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-03-100x50.jpg" data-anim="ms:600;" data-in="o:0;" data-out="a:false;" data-color="light"><img loading="lazy" src="http://PLACEHOLDER.wpsho/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="a" title="home-7-rev-slider-img-03" width="1920" height="1100" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//PLACEHOLDER.wpsho/wp-content/uploads/2019/02/home-7-rev-slider-img-03.jpg" data-no-retina><rs-layer id="slider-6-slide-16-layer-3" data-type="text" data-xy="xo:82px,86px,76px,-10px;yo:410px,140px,180px,170px;" data-text="w:normal;s:14;l:28;ls:1px;fw:500;a:inherit;" data-dim="w:376px;h:23px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:0;sp:800;" data-frame_999="o:0;tp:600;st:w;sR:8200;" style="z-index:5;font-family:Yantramanav;">EXPLORE THE FEATURES 
+							</rs-layer><rs-layer id="slider-6-slide-16-layer-1" data-type="text" data-xy="xo:77px,85px,76px,-14px;yo:435px,165px,209px,202px;" data-text="w:normal;s:80,80,63,45;l:80,80,60,45;fw:900;a:inherit;" data-dim="w:588px,878px,498px,287px;h:163px,auto,auto,auto;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:0;sp:800;" data-frame_999="o:0;tp:600;st:w;sR:8200;" style="z-index:6;font-family:Yantramanav;">PROJECTS MADE
+TO ENDURE
+
+ 
+							</rs-layer><rs-layer id="slider-6-slide-16-layer-2" data-type="text" data-xy="xo:81px,85px,78px,381px;yo:608px,342px,346px,300px;" data-text="w:normal;l:30,30,30,22;fw:400,400,400,300;a:inherit;" data-dim="w:597px,663px,610px,308px;h:67px,68px,69px,auto;" data-vbility="t,t,t,f" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;e:power3.out;st:200;sp:800;sR:200;" data-frame_999="o:0;tp:600;st:w;sR:8000;" style="z-index:7;font-family:Yantramanav;">Etiam scelerisque tortor at lectus dapibus, nec fermentum diam feugiat.
+Morbi rutrum magna et dui feugiat, non tristique mi convallis liquam. 
+							</rs-layer><rs-layer id="slider-6-slide-16-layer-12" data-type="text" data-xy="xo:81px,88px,79px,-12px;y:t,t,t,m;yo:684px,418px,420px,80px;" data-text="w:nowrap,nowrap,nowrap,normal;s:16;l:32;a:inherit;" data-dim="w:auto,auto,auto,305px;" data-rsp_bd="off" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:400;sp:800;sR:400;" data-frame_999="o:0;tp:600;st:w;sR:7800;" style="z-index:8;font-family:Yantramanav;"><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/portfolio-item/institutional-architecture/" target="_self" style="margin: 16px 16px 16px 0" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Read More</span>
+    </a><a itemprop="url" href="https://wilmer.qodeinteractive.com/elementor/contact-us/" target="_self" style="background-color: #00235a;font-weight: 400" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Contact Us</span>
+    </a> 
+							</rs-layer></rs-slide></rs-slides><rs-static-layers><rs-layer id="slider-6-slide-5-layer-16" class="rs-layer-static" data-type="image" data-xy="y:b;" data-text="l:22;a:inherit;" data-dim="w:['1920px','1920px','1920px','1920px'];h:['70px','70px','70px','70px'];" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-onslides="s:1;" data-frame_0="tp:600;" data-frame_1="tp:600;st:0;" data-frame_999="o:0;tp:600;st:w;sR:8700;" style="z-index:10;"><img src="http://PLACEHOLDER.wpsho/wp-content/plugins/revslider/public/assets/assets/dummy.png" class="tp-rs-img rs-lazyload" data-lazyload="" data-no-retina></rs-layer></rs-static-layers></rs-module><script type="text/javascript">
+					setREVStartSize({c: 'rev_slider_6_1',rl:[1240,1024,778,480],el:[1089,645,675,667],gw:[1300,1100,778,300],gh:[1089,645,675,667],type:'standard',justify:'',layout:'fullwidth',mh:"0"});
+				</script></rs-module-wrap></div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-cd50144 mkdf-elementor-row-grid-section elementor-section-full_width elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="cd50144" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c3b69e8" data-id="c3b69e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-084a46a elementor-widget elementor-widget-mkdf_section_title" data-id="084a46a" data-element_type="widget" data-widget_type="mkdf_section_title.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-section-title-holder  mkdf-st-standard   ">
+	<div class="mkdf-st-inner">
+                    <h6 class="mkdf-st-intro-title">
+                Explore the Features            </h6>
+        					<h2 class="mkdf-st-title">
+				Full interior design<br> services			</h2>
+					</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-72b484f" data-id="72b484f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-703a886 elementor-widget elementor-widget-mkdf_icon_with_text" data-id="703a886" data-element_type="widget" data-widget_type="mkdf_icon_with_text.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-iwt clearfix  mkdf-iwt-icon-top  mkdf-iwt-icon-medium">
+	<div class="mkdf-iwt-icon">
+									<img width="64" height="64" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h5-icon-img-01.png" class="attachment-full size-full" alt="a" loading="lazy"></div>
+	<div class="mkdf-iwt-content" style="padding-top: 16px">
+                    <p class="mkdf-iwt-caption">EXPLORE THE FEATURES</p>
+        					<h4 class="mkdf-iwt-title" style="margin-top: -4px">
+								<span class="mkdf-iwt-title-text">General Contracting</span>
+							</h4>
+							<p class="mkdf-iwt-text" style="margin-top: 14px">Proin ultrices metus idve eget sociis eut quis lacinia mc erisque tortor.</p>
+			</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-82ffba6" data-id="82ffba6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-18a61da elementor-widget elementor-widget-mkdf_icon_with_text" data-id="18a61da" data-element_type="widget" data-widget_type="mkdf_icon_with_text.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-iwt clearfix  mkdf-iwt-icon-top  mkdf-iwt-icon-medium">
+	<div class="mkdf-iwt-icon">
+									<img width="67" height="64" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h5-icon-img-02.png" class="attachment-full size-full" alt="a" loading="lazy"></div>
+	<div class="mkdf-iwt-content" style="padding-top: 16px">
+                    <p class="mkdf-iwt-caption">EXPLORE THE FEATURES</p>
+        					<h4 class="mkdf-iwt-title" style="margin-top: -4px">
+								<span class="mkdf-iwt-title-text">Product Design</span>
+							</h4>
+							<p class="mkdf-iwt-text" style="margin-top: 14px">Proin ultrices metus idve eget sociis eut quis lacinia mc erisque tortor.</p>
+			</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-4dae14c mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="4dae14c" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-aa7175f" data-id="aa7175f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d384aef elementor-widget elementor-widget-mkdf_icon_with_text" data-id="d384aef" data-element_type="widget" data-widget_type="mkdf_icon_with_text.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-iwt clearfix  mkdf-iwt-icon-top  mkdf-iwt-icon-medium">
+	<div class="mkdf-iwt-icon">
+									<img width="62" height="64" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h5-icon-img-03.png" class="attachment-full size-full" alt="a" loading="lazy"></div>
+	<div class="mkdf-iwt-content" style="padding-top: 16px">
+                    <p class="mkdf-iwt-caption">EXPLORE THE FEATURES</p>
+        					<h4 class="mkdf-iwt-title" style="margin-top: -4px">
+								<span class="mkdf-iwt-title-text">Project Planning</span>
+							</h4>
+							<p class="mkdf-iwt-text" style="margin-top: 14px">Proin ultrices metus idve eget sociis eut quis lacinia mc erisque tortor.</p>
+			</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f7e4bc2" data-id="f7e4bc2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-eff294f elementor-widget elementor-widget-mkdf_icon_with_text" data-id="eff294f" data-element_type="widget" data-widget_type="mkdf_icon_with_text.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-iwt clearfix  mkdf-iwt-icon-top  mkdf-iwt-icon-medium">
+	<div class="mkdf-iwt-icon">
+									<img width="66" height="64" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h5-icon-img-04.png" class="attachment-full size-full" alt="a" loading="lazy"></div>
+	<div class="mkdf-iwt-content" style="padding-top: 16px">
+                    <p class="mkdf-iwt-caption">EXPLORE THE FEATURES</p>
+        					<h4 class="mkdf-iwt-title" style="margin-top: -4px">
+								<span class="mkdf-iwt-title-text">Interior Design</span>
+							</h4>
+							<p class="mkdf-iwt-text" style="margin-top: 14px">Proin ultrices metus idve eget sociis eut quis lacinia mc erisque tortor.</p>
+			</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-515c821" data-id="515c821" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cdccc65 elementor-widget elementor-widget-mkdf_icon_with_text" data-id="cdccc65" data-element_type="widget" data-widget_type="mkdf_icon_with_text.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-iwt clearfix  mkdf-iwt-icon-top  mkdf-iwt-icon-medium">
+	<div class="mkdf-iwt-icon">
+									<img width="71" height="64" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h5-icon-img-05.png" class="attachment-full size-full" alt="a" loading="lazy"></div>
+	<div class="mkdf-iwt-content" style="padding-top: 16px">
+                    <p class="mkdf-iwt-caption">EXPLORE THE FEATURES</p>
+        					<h4 class="mkdf-iwt-title" style="margin-top: -4px">
+								<span class="mkdf-iwt-title-text">Machine Desing</span>
+							</h4>
+							<p class="mkdf-iwt-text" style="margin-top: 14px">Proin ultrices metus idve eget sociis eut quis lacinia mc erisque tortor.</p>
+			</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-elementor-row" style="">		<section class="elementor-section elementor-top-section elementor-element elementor-element-10174b17 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="10174b17" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-67c4e5de" data-id="67c4e5de" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7b5d2fc5 elementor-widget elementor-widget-text-editor" data-id="7b5d2fc5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<h1>Projects</h1>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-row-background-text-holder mkdf-row-background-text-front"><div class="mkdf-row-background-text-wrapper mkdf-row-background-text-animation"><div class="mkdf-row-background-text-wrapper-inner" style="font-size:180px;vertical-align:middle;padding-left:5.1%" data-font-size-1440="160px" data-font-size-1280="160px" data-padding-left-size-1440="3.2%" data-padding-left-size-1280="4%"><div class="mkdf-row-background-text-1">Latest</div></div></div></div></div>		<section class="elementor-section elementor-top-section elementor-element elementor-element-e98e910 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="e98e910" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0736c02" data-id="0736c02" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4e15cdb elementor-widget elementor-widget-mkdf_portfolio_list" data-id="4e15cdb" data-element_type="widget" data-widget_type="mkdf_portfolio_list.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-portfolio-list-holder mkdf-grid-list mkdf-disable-bottom-space mkdf-pl-gallery mkdf-three-columns mkdf-normal-space mkdf-pl-gallery-bordered-overlay    mkdf-pl-pag-no-pagination mkdf-pl-has-filter     mkdf-pl-default-skin" data-type="gallery" data-skin="default-skin" data-number-of-columns="three" data-space-between-items="normal" data-number-of-items="6" data-image-proportions="full" data-enable-fixed-proportions="data-enable-image-shadow=no" data-category="architecture" data-orderby="date" data-order="ASC" data-item-style="gallery-bordered-overlay" data-content-top-margin="data-content-bottom-margin=" data-enable-title="yes" data-title-tag="h4" data-enable-category="yes" data-enable-count-images="yes" data-enable-excerpt="no" data-excerpt-length="data-readmore=yes" data-pagination-type="no-pagination" data-load-more-top-margin="data-filter=yes" data-filter-order-by="name" data-enable-article-animation="no" data-portfolio-slider-on="no" data-enable-loop="yes" data-enable-autoplay="yes" data-slider-speed="5000" data-slider-speed-animation="600" data-enable-navigation="yes" data-enable-pagination="yes" data-enable-auto-width="no" data-max-num-pages="1" data-next-page="2">
+		<div class="mkdf-pl-filter-holder">
+		<div class="mkdf-plf-inner">
+							<ul><li class="mkdf-pl-filter" data-filter="">
+						<span>Show all</span>
+					</li>
+											<li class="mkdf-pl-filter" data-filter=".portfolio-category-exterior-design">
+							<span>Exterior design</span>
+						</li>
+											<li class="mkdf-pl-filter" data-filter=".portfolio-category-furniture">
+							<span>Furniture</span>
+						</li>
+											<li class="mkdf-pl-filter" data-filter=".portfolio-category-interior-design">
+							<span>Interior design</span>
+						</li>
+									</ul></div>
+	</div>
+	<div class="mkdf-pl-inner mkdf-outer-space  clearfix">
+		<article class="mkdf-pl-item mkdf-item-space  post-598 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-furniture portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/house-by-the-sea/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-01.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-01.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-01-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-01-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-01-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/furniture/">Furniture</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/house-by-the-sea/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		House by the Sea	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/house-by-the-sea/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/house-by-the-sea/" target="_self"></a>
+	</div>
+</article><article class="mkdf-pl-item mkdf-item-space  post-605 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-interior-design portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/under-the-stairs/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-02.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-02.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-02-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-02-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-02-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/interior-design/">Interior design</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/under-the-stairs/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Under the Stairs	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/under-the-stairs/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/under-the-stairs/" target="_self"></a>
+	</div>
+</article><article class="mkdf-pl-item mkdf-item-space  post-606 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-exterior-design portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/steel-and-glass/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-03.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-03.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-03-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-03-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-03-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/exterior-design/">Exterior design</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/steel-and-glass/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Steel and Glass	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/steel-and-glass/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/steel-and-glass/" target="_self"></a>
+	</div>
+</article><article class="mkdf-pl-item mkdf-item-space  post-607 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-exterior-design portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/concrete-design/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-04.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-04.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-04-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-04-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-04-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/exterior-design/">Exterior design</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/concrete-design/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Concrete Design	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/concrete-design/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/concrete-design/" target="_self"></a>
+	</div>
+</article><article class="mkdf-pl-item mkdf-item-space  post-608 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-exterior-design portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/wood-cladding/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-05.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-05.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-05-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-05-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-05-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/exterior-design/">Exterior design</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/wood-cladding/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Wood Cladding	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/wood-cladding/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/wood-cladding/" target="_self"></a>
+	</div>
+</article><article class="mkdf-pl-item mkdf-item-space  post-609 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-interior-design portfolio-tag-interior portfolio-tag-minimal"><div class="mkdf-pl-item-inner">
+		<a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/sea-buildings/">
+<div class="mkdf-pli-image">
+	<img width="1100" height="1468" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-06.jpg" class="attachment-full size-full wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-06.jpg 1100w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-06-225x300.jpg 225w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-06-767x1024.jpg 767w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2018/12/h3-img-06-768x1025.jpg 768w" sizes="(max-width: 1100px) 100vw, 1100px"></div>
+</a>
+<div class="mkdf-pli-text-holder">
+    <div class="mkdf-pli-text-wrapper">
+        <div class="mkdf-pli-text">
+            		<h6 class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-category/interior-design/">Interior design</a>
+					</h6>
+	
+                <a href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/sea-buildings/">
+	<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Sea Buildings	</h4>
+    </a>
+
+            
+            
+            
+    <div class="mkdf-pl-read-more-holder">
+    
+    <a itemprop="url" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/sea-buildings/" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-simple">
+    <span class="mkdf-btn-text"></span>
+    </a>
+    </div>
+
+            </div>
+    </div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="https://TheTravisM.github.io/Nelson-Stark/portfolio-item/sea-buildings/" target="_self"></a>
+	</div>
+</article></div>
+	
+	</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-68de045 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="68de045" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12973a9" data-id="12973a9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2ae1897 elementor-widget elementor-widget-mkdf_section_title" data-id="2ae1897" data-element_type="widget" data-widget_type="mkdf_section_title.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-section-title-holder  mkdf-st-standard   ">
+	<div class="mkdf-st-inner">
+                    <h6 class="mkdf-st-intro-title">
+                OUR HAPPY CLIENTS            </h6>
+        					<h2 class="mkdf-st-title">
+				Testimonials			</h2>
+					</div>
+</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-37a45c9 elementor-widget elementor-widget-mkdf_testimonials" data-id="37a45c9" data-element_type="widget" data-widget_type="mkdf_testimonials.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-testimonials-holder clearfix mkdf-testimonials-vertical-scroll ">
+    <div class="mkdf-testimonials" data-number-of-items="1" data-enable-loop="yes" data-enable-autoplay="yes" data-slider-speed="5000" data-slider-speed-animation="600" data-enable-navigation="no" data-enable-pagination="yes">
+        <div class="mkdf-testimonials-quote-holder">
+            <svg x="0px" y="0px" width="154px" height="123px" viewbox="130 335.5 154 123" style="enable-background:new 130 335.5 154 123;" xml:space="preserve"><g><g><path d="M278.031,336.505v26.709c-15.584,0.437-23.484,11.185-23.484,31.964v6.833v1h1H283V457.5h-57.434
+                            c-5.813-18.085-8.76-35.984-8.76-53.211c0-20.312,5.314-36.878,15.794-49.236C242.868,342.944,258.149,336.707,278.031,336.505
+                             M192.677,336.505v26.708c-15.885,0.428-23.936,11.177-23.936,31.964v6.833v1h1h27.903V457.5h-57.448
+                            c-6.103-17.809-9.197-35.708-9.197-53.211c0-20.307,5.389-36.871,16.016-49.231C157.436,342.946,172.794,336.707,192.677,336.505
+                             M279.031,335.5c-20.773,0-36.509,6.306-47.193,18.905c-10.69,12.606-16.032,29.234-16.032,49.883
+                            c0,17.617,3.006,35.69,9.032,54.211H284v-56.489h-28.453v-6.833c0-20.649,7.827-30.977,23.484-30.977V335.5L279.031,335.5z
+                             M193.677,335.5c-20.774,0-36.581,6.306-47.419,18.905C135.419,367.012,130,383.639,130,404.289
+                            c0,17.924,3.161,35.989,9.484,54.211h59.161v-56.489h-28.903v-6.833c0-20.649,7.974-30.977,23.936-30.977V335.5L193.677,335.5z"></path></g></g></svg></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                
+                        <div class="mkdf-testimonial-content swiper-slide" id="mkdf-testimonials-3424">
+                                                            <div class="mkdf-testimonial-image">
+                                    <img width="193" height="193" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-02.jpg" class="attachment-193x193 size-193x193 wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-02.jpg 193w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-02-150x150.jpg 150w" sizes="(max-width: 193px) 100vw, 193px"></div>
+                                                        <div class="mkdf-testimonial-text-holder">
+                                                                    <p class="mkdf-testimonial-text">Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus im tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis eo magna. Sed consequat, leo eget bibendum sodales, augue velit. Aliquam lorem.</p>
+                                                                                                    <h6 class="mkdf-testimonial-author">
+                                                                                    <span class="mkdf-testimonials-author-job">Architect</span>
+                                                                            </h6>
+                                    <h4 class="mkdf-testimonial-author">
+                                        <span class="mkdf-testimonials-author-name">Philip Larson</span>
+                                    </h4>
+                                                            </div>
+                        </div>
+
+                    
+                        <div class="mkdf-testimonial-content swiper-slide" id="mkdf-testimonials-3421">
+                                                            <div class="mkdf-testimonial-image">
+                                    <img width="193" height="193" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-03.jpg" class="attachment-193x193 size-193x193 wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-03.jpg 193w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-03-150x150.jpg 150w" sizes="(max-width: 193px) 100vw, 193px"></div>
+                                                        <div class="mkdf-testimonial-text-holder">
+                                                                    <p class="mkdf-testimonial-text">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante. Cum sociis Theme done.</p>
+                                                                                                    <h6 class="mkdf-testimonial-author">
+                                                                                    <span class="mkdf-testimonials-author-job">Interior Designer</span>
+                                                                            </h6>
+                                    <h4 class="mkdf-testimonial-author">
+                                        <span class="mkdf-testimonials-author-name">Jean Scott</span>
+                                    </h4>
+                                                            </div>
+                        </div>
+
+                    
+                        <div class="mkdf-testimonial-content swiper-slide" id="mkdf-testimonials-3419">
+                                                            <div class="mkdf-testimonial-image">
+                                    <img width="193" height="193" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-01.jpg" class="attachment-193x193 size-193x193 wp-post-image" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-01.jpg 193w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/h3-testimonials-01-150x150.jpg 150w" sizes="(max-width: 193px) 100vw, 193px"></div>
+                                                        <div class="mkdf-testimonial-text-holder">
+                                                                    <p class="mkdf-testimonial-text">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Sociis viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean cum imperdi. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget. Maecenas necodio.</p>
+                                                                                                    <h6 class="mkdf-testimonial-author">
+                                                                                    <span class="mkdf-testimonials-author-job">Account Manager</span>
+                                                                            </h6>
+                                    <h4 class="mkdf-testimonial-author">
+                                        <span class="mkdf-testimonials-author-name">Brian Perry</span>
+                                    </h4>
+                                                            </div>
+                        </div>
+
+                                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+            </div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-66ad32a elementor-section-full_width elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-elementor-row-grid-no mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="66ad32a" data-element_type="section" data-settings='{"background_background":"classic"}'><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cac483d" data-id="cac483d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="mkdf-elementor-row" style="">		<section class="elementor-section elementor-inner-section elementor-element elementor-element-c68edad mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="c68edad" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4dbb0ce" data-id="4dbb0ce" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e7bc683 elementor-widget elementor-widget-text-editor" data-id="e7bc683" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<h1>Projects</h1>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8290c89 elementor-widget elementor-widget-text-editor" data-id="8290c89" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<h5 style="color: #565969; font-weight: 400">Etiam scelerisque tortor at lectus dapibus, nec fermentum diam. Morbi rutrum magna et dui feugiat, non tristique mi convallis.</h5>						</div>
+				</div>
+				<div class="elementor-element elementor-element-d625fe2 elementor-widget elementor-widget-mkdf_button" data-id="d625fe2" data-element_type="widget" data-widget_type="mkdf_button.default">
+				<div class="elementor-widget-container">
+			<a itemprop="url" href="#" target="_self" class="mkdf-btn mkdf-btn-medium mkdf-btn-solid">
+    <span class="mkdf-btn-text">Read more</span>
+    </a>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-row-background-text-holder mkdf-row-background-text-front"><div class="mkdf-row-background-text-wrapper mkdf-row-background-text-animation"><div class="mkdf-row-background-text-wrapper-inner" style="font-size:180px;color:#98B2C9;-webkit-text-stroke-color:#98B2C9;vertical-align:top;padding-left:5.4%" data-font-size-1440="160px" data-font-size-1280="160px" data-padding-left-size-1440="3.2%" data-padding-left-size-1280="4%"><div class="mkdf-row-background-text-1">Latest</div></div></div></div></div>			</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-170d011 elementor-section-full_width elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-elementor-row-grid-no mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="170d011" data-element_type="section" data-settings='{"background_background":"classic"}'><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56de20f" data-id="56de20f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-0f7f7c9 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="0f7f7c9" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c3ce3bc" data-id="c3ce3bc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-847b80a elementor-widget elementor-widget-mkdf_counter" data-id="847b80a" data-element_type="widget" data-widget_type="mkdf_counter.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-counter-holder mkdf-shadow-counter   mkdf-counter-transparent-skin">
+	<div class="mkdf-counter-inner clearfix">
+        <div class="mkdf-counter-number mkdf-shadow-counter clearfix">
+                                                <span class="mkdf-counter-background" style="-webkit-text-stroke-color: #1E3C6F">34</span>
+                                <span class="mkdf-counter mkdf-shadow-counter mkdf-zero-counter" style="font-size: 60px;color: #FFFFFF">34</span>
+                    </div>
+        <div class="mkdf-counter-content mkdf-shadow-counter">
+                            <p class="mkdf-counter-text" style="color: #FFFFFF">Design</p>
+                                        <h3 class="mkdf-counter-title" style="color: #FFFFFF">
+                    Project                </h3>
+                    </div>
+	</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-fbb0a3f" data-id="fbb0a3f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2e6c98a elementor-widget elementor-widget-mkdf_counter" data-id="2e6c98a" data-element_type="widget" data-widget_type="mkdf_counter.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-counter-holder mkdf-shadow-counter   mkdf-counter-transparent-skin">
+	<div class="mkdf-counter-inner clearfix">
+        <div class="mkdf-counter-number mkdf-shadow-counter clearfix">
+                                                <span class="mkdf-counter-background" style="-webkit-text-stroke-color: #1E3C6F">97</span>
+                                <span class="mkdf-counter mkdf-shadow-counter mkdf-zero-counter" style="font-size: 60px;color: #FFFFFF">97</span>
+                    </div>
+        <div class="mkdf-counter-content mkdf-shadow-counter">
+                            <p class="mkdf-counter-text" style="color: #FFFFFF">Happy</p>
+                                        <h3 class="mkdf-counter-title" style="color: #FFFFFF">
+                    Clients                </h3>
+                    </div>
+	</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4aa5f25" data-id="4aa5f25" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c09c6b8 elementor-widget elementor-widget-mkdf_counter" data-id="c09c6b8" data-element_type="widget" data-widget_type="mkdf_counter.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-counter-holder mkdf-shadow-counter   mkdf-counter-transparent-skin">
+	<div class="mkdf-counter-inner clearfix">
+        <div class="mkdf-counter-number mkdf-shadow-counter clearfix">
+                                                <span class="mkdf-counter-background" style="-webkit-text-stroke-color: #1E3C6F">15</span>
+                                <span class="mkdf-counter mkdf-shadow-counter mkdf-zero-counter" style="font-size: 60px;color: #FFFFFF">15</span>
+                    </div>
+        <div class="mkdf-counter-content mkdf-shadow-counter">
+                            <p class="mkdf-counter-text" style="color: #FFFFFF">Completed </p>
+                                        <h3 class="mkdf-counter-title" style="color: #FFFFFF">
+                    Projects                </h3>
+                    </div>
+	</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3b08666" data-id="3b08666" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b1d48e8 elementor-widget elementor-widget-mkdf_counter" data-id="b1d48e8" data-element_type="widget" data-widget_type="mkdf_counter.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-counter-holder mkdf-shadow-counter   mkdf-counter-transparent-skin">
+	<div class="mkdf-counter-inner clearfix">
+        <div class="mkdf-counter-number mkdf-shadow-counter clearfix">
+                                                <span class="mkdf-counter-background" style="-webkit-text-stroke-color: #1E3C6F">62</span>
+                                <span class="mkdf-counter mkdf-shadow-counter mkdf-zero-counter" style="font-size: 60px;color: #FFFFFF">62</span>
+                    </div>
+        <div class="mkdf-counter-content mkdf-shadow-counter">
+                            <p class="mkdf-counter-text" style="color: #FFFFFF">Completed</p>
+                                        <h3 class="mkdf-counter-title" style="color: #FFFFFF">
+                    Codes                </h3>
+                    </div>
+	</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section></div>
+		</div>
+							</div>
+		</section><div class="mkdf-elementor-row" style="">		<section class="elementor-section elementor-top-section elementor-element elementor-element-c9c7ab7 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="c9c7ab7" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b26861a" data-id="b26861a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7260001 elementor-widget elementor-widget-text-editor" data-id="7260001" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<h1>Meet the team</h1>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-row-background-text-holder mkdf-row-background-text-front"><div class="mkdf-row-background-text-wrapper mkdf-row-background-text-animation"><div class="mkdf-row-background-text-wrapper-inner" style="font-size:180px;vertical-align:middle;padding-left:5.1%" data-font-size-1440="160px" data-font-size-1280="160px" data-padding-left-size-1440="3.2%" data-padding-left-size-1280="4%"><div class="mkdf-row-background-text-1">People</div></div></div></div></div>		<section class="elementor-section elementor-top-section elementor-element elementor-element-4116b89 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="4116b89" data-element_type="section"><div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5bf4eb2" data-id="5bf4eb2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-313f985 elementor-widget elementor-widget-mkdf_team" data-id="313f985" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-01.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-01.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-01-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-01-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">ACCOUNT MANAGER</h6>
+                                    <h4 class="mkdf-team-name">Rachel Griffin</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3681d0f" data-id="3681d0f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2b0d56b elementor-widget elementor-widget-mkdf_team" data-id="2b0d56b" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-02.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-02.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-02-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-02-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">Developer</h6>
+                                    <h4 class="mkdf-team-name">Ethan Welch</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a908c2b" data-id="a908c2b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ec9214e elementor-widget elementor-widget-mkdf_team" data-id="ec9214e" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive/twitter.com/MikadoThemes?lang=en" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-03.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-03.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-03-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-03-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">Interior designer</h6>
+                                    <h4 class="mkdf-team-name">Lauren Jacobs</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-af37386 mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="af37386" data-element_type="section"><div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f7a6cd7" data-id="f7a6cd7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-62d59c7 elementor-widget elementor-widget-mkdf_team" data-id="62d59c7" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-04.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-04.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-04-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-04-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">PROJECT MANAGER</h6>
+                                    <h4 class="mkdf-team-name">Adam Saito</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3627334" data-id="3627334" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e5a21f6 elementor-widget elementor-widget-mkdf_team" data-id="e5a21f6" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-05.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-05.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-05-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-05-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">TEAM LEAD</h6>
+                                    <h4 class="mkdf-team-name">Hannah Little</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5226030" data-id="5226030" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c9cd36f elementor-widget elementor-widget-mkdf_team" data-id="c9cd36f" data-element_type="widget" data-widget_type="mkdf_team.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-team-holder mkdf-team-info-below-image">
+    <div class="mkdf-team-inner">
+                <div class="mkdf-team-image">
+                            <div class="mkdf-team-social-holder">
+                                    <span class="mkdf-team-icon mkdf-team-social-opener">
+                                        <span class="mkdf-icon-shortcode mkdf-normal">
+                                            <a href="#">
+                                                <span class="social_share mkdf-icon-element"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_pinterest mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://www.facebook.com/QodeInteractive/" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_facebook mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://twitter.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_twitter mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                            <span class="mkdf-team-icon">    <span class="mkdf-icon-shortcode mkdf-normal   ">
+                    <a class="" href="https://dribbble.com/qodeinteractive" target="_blank">
+                    <span aria-hidden="true" class="mkdf-icon-font-elegant social_dribbble mkdf-icon-element"></span>                    </a>
+            </span>
+</span>
+                                    </div>
+                        <img width="800" height="932" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-06.jpg" class="attachment-full size-full" alt="a" loading="lazy" srcset="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-06.jpg 800w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-06-258x300.jpg 258w,https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-team-img-06-768x895.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"><div class="mkdf-team-social-wrapper" style="background-color: rgba(2, 1, 1, 0)">
+                <div class="mkdf-team-social-outer">
+                    <div class="mkdf-team-social-inner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mkdf-team-info">
+                                        <h6 class="mkdf-team-position">CEO</h6>
+                                    <h4 class="mkdf-team-name">Stephen Banks</h4>
+                </div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><section class="elementor-section elementor-top-section elementor-element elementor-element-d6cefb4 mkdf-elementor-row-grid-section elementor-section-full_width elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="d6cefb4" data-element_type="section" data-settings='{"background_background":"classic"}'><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-65f135b" data-id="65f135b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-550f15e elementor-widget elementor-widget-mkdf_section_title" data-id="550f15e" data-element_type="widget" data-widget_type="mkdf_section_title.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-section-title-holder  mkdf-st-standard   ">
+	<div class="mkdf-st-inner">
+                    <h6 class="mkdf-st-intro-title">
+                EXPLORE THE FEATURES            </h6>
+        					<h2 class="mkdf-st-title">
+				Our Clients			</h2>
+					</div>
+</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-eca32ab elementor-widget elementor-widget-mkdf_clients_grid" data-id="eca32ab" data-element_type="widget" data-widget_type="mkdf_clients_grid.default">
+				<div class="elementor-widget-container">
+			        <div class="mkdf-clients-grid-holder mkdf-grid-list mkdf-disable-bottom-space mkdf-four-columns mkdf-normal-space  mkdf-cc-hover-roll-over">
+            <div class="mkdf-cg-inner mkdf-outer-space">
+                <div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-01.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-02.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-03.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-04.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-05.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-06.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-07.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-08.png" alt="a"></a>
+	</div>            </div>
+        </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8940ef6 elementor-widget elementor-widget-mkdf_clients_grid" data-id="8940ef6" data-element_type="widget" data-widget_type="mkdf_clients_grid.default">
+				<div class="elementor-widget-container">
+			        <div class="mkdf-clients-grid-holder mkdf-grid-list mkdf-disable-bottom-space mkdf-four-columns mkdf-normal-space  mkdf-cc-hover-roll-over">
+            <div class="mkdf-cg-inner mkdf-outer-space">
+                <div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-09.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-10.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-11.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-12.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-13.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-14.png" alt="a"></a>
+	</div><div class="mkdf-cc-item mkdf-item-space mkdf-cci-has-link">
+			<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
+						<img itemprop="image" class="mkdf-cc-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-15.png" alt="a"><img itemprop="image" class="mkdf-cc-hover-image" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/02/h3-clients-16.png" alt="a"></a>
+	</div>            </div>
+        </div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-elementor-row" style="">		<section class="elementor-section elementor-top-section elementor-element elementor-element-aec3f0d mkdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="aec3f0d" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a2417e4" data-id="a2417e4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e12b81d elementor-widget elementor-widget-text-editor" data-id="e12b81d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<h1>Contact</h1>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section><div class="mkdf-row-background-text-holder mkdf-row-background-text-front"><div class="mkdf-row-background-text-wrapper mkdf-row-background-text-animation"><div class="mkdf-row-background-text-wrapper-inner" style="font-size:180px;vertical-align:middle;padding-left:5.1%" data-font-size-1440="160px" data-font-size-1280="160px" data-padding-left-size-1440="3.2%" data-padding-left-size-1280="4%"><div class="mkdf-row-background-text-1">Contact</div></div></div></div></div>		<section class="elementor-section elementor-top-section elementor-element elementor-element-a7e2c53 mkdf-elementor-row-grid-section mkdf-gray-text elementor-section-boxed elementor-section-height-default elementor-section-height-default mkdf-parallax-row-no mkdf-content-aligment-left mkdf-disabled-bg-image-bellow-no mkdf-row-btt-light" data-id="a7e2c53" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-22aa7fe" data-id="22aa7fe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-53add30 elementor-widget elementor-widget-text-editor" data-id="53add30" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p><a style="line-height: 32px;" href="https://www.google.com/maps/place/The+Yardbird+-+Corporate+Apartment/@40.743734,-73.9998543,18z/data=!3m1!4b1!4m13!1m7!3m6!1s0x89c259bbbf88c0b9:0xd9cee07147623496!2sW+21st+St,+New+York,+NY,+USA!3b1!8m2!3d40.744009!4d-73.999422!3m4!1s0x89c259bb96037325:0x7a779116cf918079!8m2!3d40.743732!4d-73.99876" target="_blank" rel="noopener noreferrer">198 West 21th Street, Suite 721<br>New York, NY 10010</a></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-745bf1d elementor-widget elementor-widget-text-editor" data-id="745bf1d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 32px;">Email: <a href="mailto:wilmer@mikado.com">wilmer@mikado.com</a></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-0d56012 elementor-widget elementor-widget-text-editor" data-id="0d56012" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 32px;">Phone: <a href="tel:881010000000">881010000000</a></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2c3563e elementor-widget elementor-widget-text-editor" data-id="2c3563e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 32px;">Fax:<a href="tel:+88%20(0)%20202%200000%20001"> +88 (0) 202 0000 001</a></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1c256b5 elementor-widget elementor-widget-text-editor" data-id="1c256b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 32px;">Monday-Friday: 9am to 5pm;<br>Saturday: 10am to 2pm</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-827dde0" data-id="827dde0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ee75942 elementor-widget elementor-widget-mkdf_google_map" data-id="ee75942" data-element_type="widget" data-widget_type="mkdf_google_map.default">
+				<div class="elementor-widget-container">
+			<div class="mkdf-google-map-holder">
+		<div class="mkdf-google-map" id="mkdf-map-1600015" data-addresses='["198 West 21th Street, Suite 721 New York, NY 10010"]' data-custom-map-style="data-color-overlay=" data-saturation="data-lightness=" data-zoom="12" data-pin="https://TheTravisM.github.io/Nelson-Stark/wp-content/uploads/2019/01/map_pin.png" data-unique-id="1600015" data-scroll-wheel="no" data-height="410" data-snazzy-map-style="yes"></div>
+	        		<input type="hidden" class="mkdf-snazzy-map" value="`{`
+{
+``featureType``: ``administrative``,
+``elementType``: ``labels.text.fill``,
+``stylers``: `{`
+{
+``color``: ``#444444``
+}
+`}`
+},
+{
+``featureType``: ``landscape``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``color``: ``#f2f2f2``
+}
+`}`
+},
+{
+``featureType``: ``poi``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``visibility``: ``off``
+}
+`}`
+},
+{
+``featureType``: ``road``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``saturation``: -100
+},
+{
+``lightness``: 45
+}
+`}`
+},
+{
+``featureType``: ``road.highway``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``visibility``: ``simplified``
+}
+`}`
+},
+{
+``featureType``: ``road.highway``,
+``elementType``: ``geometry.fill``,
+``stylers``: `{`
+{
+``lightness``: ``-10``
+}
+`}`
+},
+{
+``featureType``: ``road.highway``,
+``elementType``: ``geometry.stroke``,
+``stylers``: `{`
+{
+``lightness``: ``0``
+}
+`}`
+},
+{
+``featureType``: ``road.arterial``,
+``elementType``: ``labels.icon``,
+``stylers``: `{`
+{
+``visibility``: ``off``
+}
+`}`
+},
+{
+``featureType``: ``transit``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``visibility``: ``off``
+}
+`}`
+},
+{
+``featureType``: ``water``,
+``elementType``: ``all``,
+``stylers``: `{`
+{
+``color``: ``#cacaca``
+},
+{
+``visibility``: ``on``
+}
+`}`
+}
+`}`"><div class="mkdf-google-map-overlay"></div>
+	</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section></div>
+					</div>
+							</div>
+							</div>
+		        	</div>
+
+    </div>
+
+</div> 
+	</div>  
+			</div> 
+</div> 
+
+		<script type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.waiting = ["main","parallax","video","slideanims","actions","layeranimation","navigation","carousel","panzoom"];
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script><link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff" type="font/woff" crossorigin="anonymous" media="all"><link href="https://fonts.googleapis.com/css?family=Yantramanav:500%2C900%2C400%2C300" rel="stylesheet" property="stylesheet" media="all" type="text/css"><script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script><link rel="stylesheet" id="rs-plugin-settings-css" href="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/revslider/public/assets/css/rs6.css" type="text/css" media="all"><style id="rs-plugin-settings-inline-css" type="text/css">
+		rs-static-layers{z-index:100}
+		#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows{cursor:pointer;background-color:#00235a;width:70px;height:70px;position:absolute;display:block;z-index:100;  transition:background-color 0.3s ease;  -webkit-transition:background-color 0.3s ease;  -moz-transition:background-color 0.3s ease}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows:before{font-family:'eleganticons';font-size:30px;color:#fff;display:block;line-height:70px;text-align:center;  transition:color 0.3s ease;  -webkit-transition:color 0.3s ease;  -moz-transition:color 0.3s ease}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.tp-leftarrow:before{content:"\34";  margin-left:-3px}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.tp-rightarrow:before{content:"\35";  margin-right:-3px}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.rs-touchhover{background-color:#ff5e14}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.rs-touchhover:before{color:#fff}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.tp-rightarrow{background-color:#ff5e14}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.tp-rightarrow:before{color:#fff}#rev_slider_6_1_wrapper .aux-wilmer-navigation.tparrows.tp-leftarrow.rs-touchhover + .tp-rightarrow{background-color:#00235a}#rev_slider_6_1_wrapper .wilmer-navigation.tp-bullets{}#rev_slider_6_1_wrapper .wilmer-navigation.tp-bullets:before{content:" ";position:absolute;width:100%;height:100%;background:transparent;padding:10px;box-sizing:content-box;  border-radius:50%}#rev_slider_6_1_wrapper .wilmer-navigation .tp-bullet{width:7px;height:7px;position:absolute;border-radius:50%;cursor:pointer;box-sizing:content-box;  transition:all 0.3s ease;  -webkit-transition:all 0.3s ease;  -moz-transition:all 0.3s ease}#rev_slider_6_1_wrapper .wilmer-navigation .tp-bullet{background-color:#00235a}#rev_slider_6_1_wrapper .wilmer-navigation .tp-bullet.rs-touchhover,#rev_slider_6_1_wrapper .wilmer-navigation .tp-bullet.selected{transform:scale(1.58)}#rev_slider_6_1_wrapper .wilmer-navigation.mkdf-light-navigation .tp-bullet{background-color:#fff}#rev_slider_6_1_wrapper .wilmer-navigation.mkdf-dark-navigation .tp-bullet{background-color:#00235a}
+</style><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script><script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4">' + 'ipt>' );
+</script><script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/TheTravisM.github.io\/Nelson-Stark\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/contact-form-7/includes/js/index.js" id="contact-form-7-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/revslider/public/assets/js/rbtools.min.js" id="tp-tools-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/revslider/public/assets/js/rs6.min.js" id="revmin-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script><script type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
+/* <![CDATA[ */
+var qodefQiAddonsGlobal = {"vars":{"adminBarHeight":0,"iconArrowLeft":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>","iconArrowRight":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>","iconClose":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"}};
+/* ]]> */
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js" id="qi-addons-for-elementor-script-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/jquery/ui/tabs.min.js" id="jquery-ui-tabs-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/jquery/ui/accordion.min.js" id="jquery-ui-accordion-js"></script><script type="text/javascript" id="mediaelement-core-js-before">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/mediaelement/mediaelement-and-player.min.js" id="mediaelement-core-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/mediaelement/mediaelement-migrate.min.js" id="mediaelement-migrate-js"></script><script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/Stark\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/mediaelement/wp-mediaelement.min.js" id="wp-mediaelement-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.appear.js" id="appear-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/modernizr.min.js" id="modernizr-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-includes/js/hoverIntent.min.js" id="hoverIntent-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.plugin.js" id="jquery-plugin-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/owl.carousel.min.js" id="owl-carousel-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.waypoints.min.js" id="waypoints-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/fluidvids.min.js" id="fluidvids-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/perfect-scrollbar.jquery.min.js" id="perfect-scrollbar-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/ScrollToPlugin.min.js" id="ScrollToPlugin-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/parallax.min.js" id="parallax-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.waitforimages.js" id="waitforimages-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.prettyPhoto.js" id="prettyphoto-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery.easing.1.3.js" id="jquery-easing-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/isotope.pkgd.min.js" id="isotope-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/packery-mode.pkgd.min.js" id="packery-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" id="swiper-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules/plugins/jquery-mousewheel.min.js" id="jquery-mousewheel-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/countdown/assets/js/plugins/jquery.countdown.min.js" id="countdown-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/counter/assets/js/plugins/counter.js" id="counter-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/counter/assets/js/plugins/absoluteCounter.min.js" id="absoluteCounter-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/inc/shortcodes/typeout-text/assets/js/plugins/typed.js" id="typed-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/full-screen-sections/assets/js/plugins/jquery.fullPage.min.js" id="fullPage-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/pie-chart/assets/js/plugins/easypiechart.js" id="easypiechart-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/uncovering-sections/assets/js/plugins/curtain.js" id="curtain-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/wilmer-core/shortcodes/vertical-split-slider/assets/js/plugins/jquery.multiscroll.min.js" id="multiscroll-js"></script><script type="text/javascript" id="wilmer-mikado-modules-js-extra">
+/* <![CDATA[ */
+var mkdfGlobalVars = {"vars":{"mkdfAddForAdminBar":0,"mkdfElementAppearAmount":-100,"mkdfAjaxUrl":"https:\/\/TheTravisM.github.io\/Nelson-Stark\/wp-admin\/admin-ajax.php","sliderNavPrevArrow":"<span class=\"mkdf-prev-icon\"><span class=\"mkdf-alt-prev-icon arrow_left\"><\/span><span class=\"mkdf-main-icon arrow_carrot-left\"><\/span><span class=\"mkdf-prev-label\">prev<\/span><\/span>","sliderNavNextArrow":"<span class=\"mkdf-next-icon\"><span class=\"mkdf-next-label\">next<\/span><span class=\"mkdf-main-icon arrow_carrot-right\"><\/span><span class=\"mkdf-alt-next-icon arrow_right\"><\/span>","ppExpand":"Expand the image","ppNext":"Next","ppPrev":"Previous","ppClose":"Close","mkdfStickyHeaderHeight":0,"mkdfStickyHeaderTransparencyHeight":0,"mkdfTopBarHeight":40,"mkdfLogoAreaHeight":0,"mkdfMenuAreaHeight":0}};
+var mkdfPerPageVars = {"vars":{"mkdfMobileHeaderHeight":70,"mkdfStickyScrollAmount":0,"mkdfHeaderTransparencyHeight":0,"mkdfHeaderVerticalWidth":312}};
+/* ]]> */
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/themes/wilmer/assets/js/modules.js" id="wilmer-mikado-modules-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" id="share-link-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js" id="elementor-dialog-js"></script><script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true},"urls":{"assets":"https:\/\/TheTravisM.github.io\/Nelson-Stark\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":532,"title":"Architecture%20%E2%80%93%20Nelson%20Stark","excerpt":"","featuredImage":false}};
+</script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/qi-addons-for-elementor/inc/plugins/elementor/assets/js/elementor.js" id="qi-addons-for-elementor-elementor-js"></script><script type="text/javascript" src="https://TheTravisM.github.io/Nelson-Stark/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js" id="preloaded-modules-js"></script><script type="text/javascript">
+		var	tpj = jQuery;
+
+		var	revapi6;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider61"] = {init:function() {
+			revapi6 = jQuery("#rev_slider_6_1");
+			if(revapi6==undefined || revapi6.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_6_1"); return;}
+			revapi6.revolutionInit({
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:"1300,1100,778,300",
+					gridheight:"1089,645,675,667",
+					lazyType:"smart",
+					perspectiveType:"local",
+					editorheight:"1089,645,675,667",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						mouseScrollNavigation:false,
+						onHoverStop:false,
+						arrows: {
+							enable:true,
+							tmp:"<div class=\"wilmer-rev-navigation\">",
+							style:"aux-wilmer-navigation",
+							hide_onmobile:true,
+							hide_under:"768px",
+							left: {
+								v_align:"bottom",
+								h_offset:0,
+								v_offset:0
+							},
+							right: {
+								h_align:"left",
+								v_align:"bottom",
+								h_offset:70,
+								v_offset:0
+							}
+						},
+						bullets: {
+							enable:true,
+							tmp:"",
+							style:"wilmer-navigation",
+							v_offset:31,
+							space:12
+						}
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false,
+						visible_area:"20%"
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+							var api = revapi6.bind("revolution.slide.onbeforeswap",function (e, data) {
+  setTimeout(function(){
+    jQuery('.wilmer-navigation').removeClass('mkdf-light-navigation mkdf-dark-navigation').addClass(
+         'mkdf-' + api.find('rs-slide').eq(data.nextslide.index()).attr('data-color') + '-navigation'
+     );
+ }, 100);
+});
+
+jQuery(window).load(function(){
+	var leftButton = jQuery('.aux-wilmer-navigation.tparrows.tp-leftarrow'),
+		rightButton = jQuery('.aux-wilmer-navigation.tparrows.tp-rightarrow');
+
+	if(leftButton.length && rightButton.length){
+		leftButton.on('mouseenter', function(){
+			rightButton.addClass('mkdf-hover-state');
+		}).on('mouseleave', function(){
+			rightButton.removeClass('mkdf-hover-state');
+		})
+
+		rightButton.on('mouseenter', function(){
+			leftButton.addClass('mkdf-hover-state');
+		}).on('mouseleave', function(){
+			leftButton.removeClass('mkdf-hover-state');
+		})
+	}
+})
+			
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script></body></html>
