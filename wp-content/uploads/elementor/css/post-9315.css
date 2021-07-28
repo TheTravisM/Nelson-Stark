@@ -13,10 +13,12 @@
 .elementor-9315 .elementor-element.elementor-element-9d1e9d0 > .elementor-widget-container {padding: 0% 35% 0% 0%;}
 .elementor-9315 .elementor-element.elementor-element-988dfc8 {margin-top: 47px;margin-bottom: 102px;padding: 0% 20% 0% 20%;}
 .elementor-9315 .elementor-element.elementor-element-efc42db > .elementor-element-populated {padding: 0% 35% 0% 0%;}
+.elementor-9315 .elementor-element.elementor-element-1873acd > .elementor-widget-container {padding: 0px 0px 0px 0px;}
 .elementor-9315 .elementor-element.elementor-element-13416fc > .elementor-element-populated {padding: 0% 35% 0% 0%;}
 .elementor-9315 .elementor-element.elementor-element-bbd3af0 > .elementor-widget-container {padding: 0% 35% 0% 0%;}
 .elementor-9315 .elementor-element.elementor-element-8ba8821 {margin-top: 47px;margin-bottom: 102px;padding: 0% 20% 0% 20%;}
-.elementor-9315 .elementor-element.elementor-element-4ef8dbf > .elementor-element-populated {padding: 0% 35% 0% 0%;}
+.elementor-9315 .elementor-element.elementor-element-4ef8dbf > .elementor-element-populated {margin: 0px 0px 0px 0px;padding: 0% 35% 0% 0%;}
+.elementor-9315 .elementor-element.elementor-element-9caf58b > .elementor-widget-container {margin: 0px 0px 0px 0px;}
 .elementor-9315 .elementor-element.elementor-element-f950ac5 > .elementor-element-populated {padding: 0% 35% 0% 0%;}
 .elementor-9315 .elementor-element.elementor-element-02f7e67 > .elementor-widget-container {padding: 0% 35% 0% 0%;}
 .elementor-9315 .elementor-element.elementor-element-6ad8a60:not(.elementor-motion-effects-element-type-background), .elementor-9315 .elementor-element.elementor-element-6ad8a60 > .elementor-motion-effects-container > .elementor-motion-effects-layer {background-image: url("https://wilmer.qodeinteractive.com/elementor/wp-content/uploads/2019/02/h1-img-06.png");background-repeat: no-repeat;}
@@ -30,7 +32,10 @@
 .elementor-9315 .elementor-element.elementor-element-340c621 {margin-top: 57px;margin-bottom: 0px;padding: 0px 0px 0px 0px;}
 .elementor-9315 .elementor-element.elementor-element-afd6411 > .elementor-element-populated {padding: 0px 0px 0px 0px;}
 .elementor-9315 .elementor-element.elementor-element-214e337 > .elementor-widget-container {margin: 0px 0px 0px 0px;padding: 83px 0px 0px 0px;}
-@media (min-width:768px) {.elementor-9315 .elementor-element.elementor-element-f950ac5 {width: 40.237%;}
+@media (min-width:768px) {.elementor-9315 .elementor-element.elementor-element-efc42db {width: 33.332%;}
+	.elementor-9315 .elementor-element.elementor-element-13416fc {width: 33%;}
+	.elementor-9315 .elementor-element.elementor-element-4ef8dbf {width: 36.806%;}
+	.elementor-9315 .elementor-element.elementor-element-f950ac5 {width: 36.431%;}
 	.elementor-9315 .elementor-element.elementor-element-fc8cc18 {width: 37.585%;}}
 @media (max-width:1024px) {.elementor-9315 .elementor-element.elementor-element-f70fdb8 > .elementor-element-populated {padding: 70px 0px 0px 0px;}
 	.elementor-9315 .elementor-element.elementor-element-1d0f860 > .elementor-widget-container {padding: 0% 55% 0% 0%;}
