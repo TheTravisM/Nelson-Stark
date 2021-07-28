@@ -14,6 +14,8 @@
 	38% {background-size: 0 87%;background-position-x: right;}
 	39% {background-size: 0 87%;background-position-x: left;}
 	100% {background-size: 100% 87%;background-position-x: left;}}
+@keyframes qodef-animate-highlight {0% {background-size: 0 100%;background-position-x: left;}
+	100% {background-size: 100% 100%;background-position-x: left;}}
 .qodef-qi-clear:after, .qodef-qi-clear:before {content: "";display: table;table-layout: fixed;}
 .qodef-qi-clear:after {clear: both;}
 .qodef-category-separator:after {content: ",";margin-right: 5px;}
@@ -26,11 +28,11 @@ body:not(.elementor-editor-active) .qodef-landing-intro-title .qodef-m-button, b
 body:not(.elementor-editor-active) .qodef-landing-intro-title .qodef-m-text {transition-delay: .25s,.25s;}
 body:not(.elementor-editor-active) .qodef-landing-intro-title .qodef-m-button {transition-delay: .5s,.5s;}
 body:not(.elementor-editor-active) .qodef-landing-intro-title.qodef-qi--appeared .qodef-m-button, body:not(.elementor-editor-active) .qodef-landing-intro-title.qodef-qi--appeared .qodef-m-text, body:not(.elementor-editor-active) .qodef-landing-intro-title.qodef-qi--appeared .qodef-m-title {opacity: 1;transform: translateX(0) translateZ(0);}
-@media only screen and (max-width:1440px) {.qodef-grid.qodef-qi-hide-under-1440, .qodef-qi-hide-under-1440 {display: none;}}
-.qodef-grid.qodef-qi-show-under-1440, .qodef-qi-show-under-1440 {display: none;}
-.qodef-grid.qodef-qi-show-under-1440+.swiper-button-prev, .qodef-grid.qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next, .qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next {display: none;}
-@media only screen and (max-width:1440px) {.qodef-grid.qodef-qi-show-under-1440, .qodef-qi-show-under-1440 {display: block;}
-	.qodef-grid.qodef-qi-show-under-1440+.swiper-button-prev, .qodef-grid.qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next, .qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next {display: block;}}
+@media only screen and (max-width:1440px) {.qodef-qi-grid.qodef-qi-hide-under-1440, .qodef-qi-hide-under-1440 {display: none;}}
+.qodef-qi-grid.qodef-qi-show-under-1440, .qodef-qi-show-under-1440 {display: none;}
+.qodef-qi-grid.qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-grid.qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next, .qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next {display: none;}
+@media only screen and (max-width:1440px) {.qodef-qi-grid.qodef-qi-show-under-1440, .qodef-qi-show-under-1440 {display: block;}
+	.qodef-qi-grid.qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-grid.qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next, .qodef-qi-show-under-1440+.swiper-button-prev, .qodef-qi-show-under-1440+.swiper-button-prev+.swiper-button-next {display: block;}}
 .fslightbox-container .fslightbox-nav .fslightbox-slide-number-container {max-width: unset;}
 .fslightbox-container .fslightbox-nav .fslightbox-toolbar {background: 0 0;}
 .fslightbox-container .fslightbox-nav .fslightbox-toolbar-button {color: #fff;}
@@ -68,6 +70,8 @@ body:not(.elementor-editor-active) .qodef-landing-intro-title.qodef-qi--appeared
 @media only screen and (max-width:1024px) {.qodef-qi-swiper-container.qodef-hide-navigation--1024 .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--1024 .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--1024+.qodef-swiper-together-nav .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--1024+.qodef-swiper-together-nav .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--1024+.swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--1024+.swiper-button-prev+.swiper-button-next {display: none;}}
 @media only screen and (max-width:768px) {.qodef-qi-swiper-container.qodef-hide-navigation--768 .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--768 .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--768+.qodef-swiper-together-nav .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--768+.qodef-swiper-together-nav .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--768+.swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--768+.swiper-button-prev+.swiper-button-next {display: none;}}
 @media only screen and (max-width:680px) {.qodef-qi-swiper-container.qodef-hide-navigation--680 .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--680 .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--680+.qodef-swiper-together-nav .swiper-button-next, .qodef-qi-swiper-container.qodef-hide-navigation--680+.qodef-swiper-together-nav .swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--680+.swiper-button-prev, .qodef-qi-swiper-container.qodef-hide-navigation--680+.swiper-button-prev+.swiper-button-next {display: none;}}
+.qodef-qi-swiper-container.qodef-navigation-alignment--flex-start .qodef-swiper-together-nav, .qodef-qi-swiper-container.qodef-navigation-alignment--flex-start+.qodef-swiper-together-nav {justify-content: flex-start;right: auto !important;}
+.qodef-qi-swiper-container.qodef-navigation-alignment--flex-end .qodef-swiper-together-nav, .qodef-qi-swiper-container.qodef-navigation-alignment--flex-end+.qodef-swiper-together-nav {justify-content: flex-end;left: auto !important;}
 .qodef-swiper-pagination-outside.swiper-pagination {position: relative;}
 .qodef-swiper-pagination-outside.swiper-pagination .swiper-pagination-bullet {color: #000;opacity: 1;transform-origin: center;transform: matrix(1,0,0,1,0,0);border: 1px solid transparent;background: currentColor;transition: transform .2s ease-out,color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;margin: 0 6px;}
 .qodef-swiper-pagination-outside.swiper-pagination .swiper-pagination-bullet-active, .qodef-swiper-pagination-outside.swiper-pagination .swiper-pagination-bullet:hover {transform: matrix(1.4,0,0,1.4,0,0) translateZ(0);}
